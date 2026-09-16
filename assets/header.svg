@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+  <title id="title">Gökay Yılmaz — AI engineer</title>
+  <desc id="desc">Beyond the demo. Into the infrastructure. Agent tooling, LLM infrastructure, open source.</desc>
+  <rect width="1280" height="340" rx="12" fill="#0d1117"/>
+  <path d="M40 48H1240" stroke="#30363d"/>
+  <circle cx="48" cy="28" r="4" fill="#45ddc2"/>
+  <text x="62" y="33" font-family="monospace" font-size="13" letter-spacing="2" fill="#8b949e">GOKAY-AI / ENGINEERING IN THE OPEN</text>
+  <text x="48" y="121" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="58" font-weight="700" letter-spacing="-2" fill="#f0f6fc">Gökay Yılmaz</text>
+  <text x="50" y="159" font-family="monospace" font-size="17" fill="#45ddc2">AI ENGINEER · AGENT TOOLING · LLM INFRASTRUCTURE</text>
+  <text x="48" y="221" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="30" font-weight="500" fill="#f0f6fc">Beyond the demo.</text>
+  <text x="48" y="263" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="30" font-weight="500" fill="#f0f6fc">Into the infrastructure.</text>
+  <g font-family="monospace" font-size="15">
+    <path d="M920 102V253" stroke="#30363d" stroke-width="2"/>
+    <path d="M920 157H980V211H1020" fill="none" stroke="#45ddc2" stroke-width="2"/>
+    <circle cx="920" cy="108" r="6" fill="#0d1117" stroke="#8b949e" stroke-width="2"/>
+    <circle cx="920" cy="157" r="6" fill="#45ddc2"/>
+    <circle cx="920" cy="253" r="6" fill="#0d1117" stroke="#8b949e" stroke-width="2"/>
+    <circle cx="1020" cy="211" r="6" fill="#45ddc2"/>
+    <text x="943" y="113" fill="#8b949e">reproduce</text>
+    <text x="943" y="149" fill="#f0f6fc">repair</text>
+    <text x="1040" y="216" fill="#45ddc2">contribute</text>
+    <text x="943" y="258" fill="#8b949e">build</text>
+  </g>
+  <text x="48" y="315" font-family="monospace" font-size="12" letter-spacing="2" fill="#8b949e">PYTHON / RUST / TYPESCRIPT</text>
+</svg>

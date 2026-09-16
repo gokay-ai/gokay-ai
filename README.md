@@ -1,155 +1,74 @@
-<p align="center">
-  <img src="./assets/insert some_code here.gif" alt="Gokay Yilmaz — AI Engineer" width="100%" style="max-width:900px; filter: brightness(1.8) contrast(1.2);">
-</p>
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="40" alt="tensorflow logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="40" alt="pytorch logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg" height="40" alt="haskell logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="40" alt="gitlab logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="40" alt="django logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" height="40" alt="rust logo"  />
-</div>
-
-###
-
-<div align="left">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=GkyEla.GkyEla&"  />
-</div>
-
-###
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=GkyEla&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=GkyEla&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
-</div>
-<br>
-<br>
-
-```mermaid
-%%{init: {
-  "theme": "base",
-  "themeVariables": {
-    "background": "transparent",
-    "primaryColor": "#E6F4FF",
-    "secondaryColor": "#F1F5F9",
-    "tertiaryColor": "#EEF2F7",
-    "primaryTextColor": "#0B1221",
-    "lineColor": "#94A3B8",
-    "fontFamily": "Inter, Segoe UI, Arial",
-    "fontSize": "14px"
-  }
-}}%%
-mindmap
-  root(( 🛰️ Gökay Yılmaz — AI Engineer & Builder))
-    ((🧠 Core Strengths))
-      Problem Solving
-      System Design
-      Scalability
-      Innovation
-      Leadership
-      Communication
-      Growth Mindset
-      Mentorship
-      Entrepreneurship
-    ((💻 Languages))
-      Python
-      JavaScript
-      C++
-      Rust
-      SQL
-      Bash
-      PowerShell
-    ((⚙️ Frameworks & Libraries))
-      React
-      Next.js
-      Electron
-      Flask
-      Django
-      FastAPI
-      Express
-    ((🎨 UI / UX))
-      Material-UI
-      TailwindCSS
-      Shadcn-UI
-      Ant Design
-      Bootstrap
-      Figma
-    ((🤖 AI / ML))
-      PyTorch
-      TensorFlow
-      Langchain
-      LLM Ops/Inference
-      Finetuning
-      Seaborn
-      Plotly
-      Transformers
-      OpenAI API Server
-      Hugging Face
-    ((☁️ Cloud & DevOps))
-      ((AWS))
-        S3
-        Lambda
-        SageMaker
-        ECS
-        Fargate
-        EC2
-        Load Balancer
-        ECR
-        Batch
-        Workspaces
-        Neptune
-      Docker
-      GitHub Actions
-      CircleCI
-      Kubernetes
-      Rancher
-      Apache APISIX
-    ((🧩 Architecture & Tools))
-      Microservices
-      RESTful APIs
-      WebSockets
-      Message Queues (RabbitMQ / Kafka)
-      Redis
-      PostgreSQL
-      MongoDB
-      ChromaDB
-    ((🚀 Personal Traits))
-      Problem Solver
-      Systems Thinker
-      Impact Oriented
-      End-to-End Builder
-      AI & Data Enthusiast
-      Open Source Contributor
-      Startup DNA
-      Always Shipping
-
-```
-
-
-
-
-
-
-
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gkyela/gkyela/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gkyela/gkyela/output/snake.svg" />
-  <img alt="github contribution snake" src="https://raw.githubusercontent.com/gkyela/gkyela/output/snake.svg" />
+  <source media="(max-width: 600px)" srcset="./assets/header-mobile.svg" />
+  <img src="./assets/header.svg" width="100%" alt="Gökay Yılmaz — AI Engineer. Beyond the demo. Into the infrastructure." />
 </picture>
+
+**I don't stop at using the AI stack. I build on it—and fix what breaks underneath.**
+
+I'm Gökay, an AI engineer working across **LLM infrastructure, autonomous agents, and developer tools**. From fine-tuning and RAG at Halkbank to upstream fixes in open-source AI, I work where model capability meets engineering reality.
+
+**Build the tool. Trace the failure. Ship the fix.**
+
+[My projects](#building) · [Open-source work](#selected-open-source-contributions) · [X](https://x.com/gokayai) · [LinkedIn](https://www.linkedin.com/in/gokay-ai/)
+
+## Selected open-source contributions
+
+### Merged upstream
+
+**[Hermes Agent · Nous Research](https://github.com/NousResearch/hermes-agent/pull/95980)**  
+**Agent infrastructure that recovers.** Fixed interrupted-update recovery so pending gateway restarts complete on the next run—even when Git already reports up to date. Original contribution incorporated upstream with co-author credit.  
+[View merged work ↗](https://github.com/NousResearch/hermes-agent/pull/95980)
+
+**[OpenClaw](https://github.com/openclaw/openclaw/pull/133888)**  
+**Recovery instead of failed turns.** Fixed llama.cpp context-overflow detection to enable session compaction and retry. Also repaired plugin-catalog routing for direct navigation and refresh.  
+[Agent recovery ↗](https://github.com/openclaw/openclaw/pull/133888) · [Catalog routing ↗](https://github.com/openclaw/openclaw/pull/144740)
+
+**[Unsloth](https://github.com/unslothai/unsloth/pull/9358)**  
+**Get past installation. Get to the model.** Fixed Studio's Linux installation fallback when distro `uv` policy blocks automatic Python downloads.  
+[View merged work ↗](https://github.com/unslothai/unsloth/pull/9358)
+
+**[Cherry Studio](https://github.com/CherryHQ/cherry-studio/pull/19874)**  
+**Correctness at the data boundary.** Fixed schema validation that broke knowledge-base listing when a database contained zero documents.  
+[View merged work ↗](https://github.com/CherryHQ/cherry-studio/pull/19874)
+
+### Ongoing contributions
+
+Open pull requests across inference, training, and agent systems—not yet merged.
+
+- **[vLLM](https://github.com/vllm-project/vllm/pulls?q=is%3Apr+author%3Agokay-ai)** — KV-cache accounting for hidden-state extraction.
+- **[SGLang](https://github.com/sgl-project/sglang/pulls?q=is%3Apr+author%3Agokay-ai)** — Disaggregated-serving staging, request retraction, and vision preprocessing.
+- **[Hugging Face Accelerate](https://github.com/huggingface/accelerate/pulls?q=is%3Apr+author%3Agokay-ai)** — Avoiding double sharding of already-sharded data loaders.
+- **[OpenHands](https://github.com/OpenHands/OpenHands/pulls?q=is%3Apr+author%3Agokay-ai)** — Claude Code ACP skill integration and agent-server reliability.
+- **[LMDeploy](https://github.com/InternLM/lmdeploy/pulls?q=is%3Apr+author%3Agokay-ai)** — Safer HTTP weight updates and validation of untrusted serving inputs.
+- **[LibreChat](https://github.com/danny-avila/LibreChat/pulls?q=is%3Apr+author%3Agokay-ai)** — MCP instructions, agent generation parameters, and proxy support.
+- **[Jan](https://github.com/janhq/jan/pulls?q=is%3Apr+author%3Agokay-ai)** — Custom OpenAI-compatible providers and llama.cpp runtime configuration.
+- **[Buzz](https://github.com/block/buzz/pulls?q=is%3Apr+author%3Agokay-ai)** — Bundled search-tool compatibility.
+
+[Explore the work →](https://github.com/pulls?q=is%3Apr+author%3Agokay-ai+is%3Apublic)
+
+## Building
+
+### [Sheep](https://github.com/gokay-ai/sheep) · Undo for AI coding agents
+
+**Agents move fast. Developers should keep control.**
+
+Turn-level checkpoints and worktree-scoped restores, written in **Rust**. Inspect the plan, rewind an agent's changes, and notify it of the restored state. Explicit previews. Scoped restores. Git metadata untouched.
+
+[Source](https://github.com/gokay-ai/sheep) · [Releases](https://github.com/gokay-ai/sheep/releases) · [Architecture](https://github.com/gokay-ai/sheep/blob/main/docs/architecture.md)
+
+### [Claude Code Sound Notifications](https://github.com/gokay-ai/claude-code-sound-notifications)
+
+**Your agent finished. You should know.**
+
+Native completion notifications for macOS and Linux through Claude Code's `Stop` hook. Built for terminal-heavy workflows, including Ghostty, tmux, and Zellij.
+
+## Engineering focus
+
+**Python · Rust · TypeScript · PyTorch · Docker · Linux**
+
+LLM fine-tuning and RAG experience at **Halkbank**. Studying **Artificial Intelligence at the University of Birmingham**, graduating in 2027. Building toward agents with better memory, measurable behavior, and recoverable workflows.
+
+---
+
+**Building serious AI infrastructure or developer tools? Let's talk.**  
+[X / @gokayai](https://x.com/gokayai) · [LinkedIn](https://www.linkedin.com/in/gokay-ai/)
