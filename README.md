@@ -13,38 +13,74 @@ I'm Gökay, an AI engineer working across **LLM infrastructure, autonomous agent
 
 ## Selected open-source contributions
 
-### Merged upstream
+**Beyond the demo. Into the infrastructure.**  
+Merged fixes across inference engines, model tooling, and the agents built on top.
 
-**[Hermes Agent · Nous Research](https://github.com/NousResearch/hermes-agent/pull/95980)**  
-**Agent infrastructure that recovers.** Fixed interrupted-update recovery so pending gateway restarts complete on the next run—even when Git already reports up to date. Original contribution incorporated upstream with co-author credit.  
-[View merged work ↗](https://github.com/NousResearch/hermes-agent/pull/95980)
+![Merged PRs](https://img.shields.io/badge/12_merged_PRs-8_upstream_projects-00b8c4?style=flat-square&labelColor=101820)
+![Hermes contribution](https://img.shields.io/badge/Hermes_Agent-upstreamed_with_credit-83c167?style=flat-square&labelColor=101820)
 
-**[OpenClaw](https://github.com/openclaw/openclaw/pull/133888)**  
-**Recovery instead of failed turns.** Fixed llama.cpp context-overflow detection to enable session compaction and retry. Also repaired plugin-catalog routing for direct navigation and refresh.  
-[Agent recovery ↗](https://github.com/openclaw/openclaw/pull/133888) · [Catalog routing ↗](https://github.com/openclaw/openclaw/pull/144740)
+<sub>Selected external AI projects · verified September 30, 2026 · excludes my own repositories and company projects. Hermes is counted separately.</sub>
 
-**[Unsloth](https://github.com/unslothai/unsloth/pull/9358)**  
-**Get past installation. Get to the model.** Fixed Studio's Linux installation fallback when distro `uv` policy blocks automatic Python downloads.  
-[View merged work ↗](https://github.com/unslothai/unsloth/pull/9358)
+### Inference & model infrastructure
 
-**[Cherry Studio](https://github.com/CherryHQ/cherry-studio/pull/19874)**  
-**Correctness at the data boundary.** Fixed schema validation that broke knowledge-base listing when a database contained zero documents.  
-[View merged work ↗](https://github.com/CherryHQ/cherry-studio/pull/19874)
+**[vLLM](https://github.com/vllm-project/vllm) · Distributed inference**  
+Fixed NIXL send-lease cleanup so a continuously heartbeated request cannot block reclamation of expired leases behind it.  
+[KV-transfer lease reclamation ↗](https://github.com/vllm-project/vllm/pull/58292)
 
-### Ongoing contributions
+**[Hugging Face Hub](https://github.com/huggingface/huggingface_hub) · Cross-platform model tooling**  
+Normalized cache revision paths on Windows to match Hub/API names and CLI filters.  
+[Consistent cache refs ↗](https://github.com/huggingface/huggingface_hub/pull/4925)
 
-Open pull requests across inference, training, and agent systems—not yet merged.
+**[Unsloth](https://github.com/unslothai/unsloth) · Training tooling**  
+Repaired Studio's Linux installation fallback when distro `uv` policy blocks automatic Python downloads—without overriding system policy.  
+[Linux installation recovery ↗](https://github.com/unslothai/unsloth/pull/9358)
 
-- **[vLLM](https://github.com/vllm-project/vllm/pulls?q=is%3Apr+author%3Agokay-ai)** — KV-cache accounting for hidden-state extraction.
-- **[SGLang](https://github.com/sgl-project/sglang/pulls?q=is%3Apr+author%3Agokay-ai)** — Disaggregated-serving staging, request retraction, and vision preprocessing.
-- **[Hugging Face Accelerate](https://github.com/huggingface/accelerate/pulls?q=is%3Apr+author%3Agokay-ai)** — Avoiding double sharding of already-sharded data loaders.
-- **[OpenHands](https://github.com/OpenHands/OpenHands/pulls?q=is%3Apr+author%3Agokay-ai)** — Claude Code ACP skill integration and agent-server reliability.
-- **[LMDeploy](https://github.com/InternLM/lmdeploy/pulls?q=is%3Apr+author%3Agokay-ai)** — Safer HTTP weight updates and validation of untrusted serving inputs.
-- **[LibreChat](https://github.com/danny-avila/LibreChat/pulls?q=is%3Apr+author%3Agokay-ai)** — MCP instructions, agent generation parameters, and proxy support.
-- **[Jan](https://github.com/janhq/jan/pulls?q=is%3Apr+author%3Agokay-ai)** — Custom OpenAI-compatible providers and llama.cpp runtime configuration.
-- **[Buzz](https://github.com/block/buzz/pulls?q=is%3Apr+author%3Agokay-ai)** — Bundled search-tool compatibility.
+### Agent runtimes & developer tools
 
-[Explore the work →](https://github.com/pulls?q=is%3Apr+author%3Agokay-ai+is%3Apublic)
+**[OpenClaw](https://github.com/openclaw/openclaw) · Four merged fixes**  
+Enabled compaction and retry for llama.cpp context overflows; repaired plugin-catalog refresh routing; distinguished local worker timeouts from provider errors; stopped internal runtime-publication failures from triggering unrelated provider failover and misleading quota warnings.  
+[Context recovery ↗](https://github.com/openclaw/openclaw/pull/133888) · [Catalog routing ↗](https://github.com/openclaw/openclaw/pull/144740) · [Timeout attribution ↗](https://github.com/openclaw/openclaw/pull/155675) · [Failover classification ↗](https://github.com/openclaw/openclaw/pull/157218)
+
+**[Goose](https://github.com/aaif-goose/goose) · Tool-calling compatibility**  
+Set explicit non-strict tool schemas for Chat Completions to prevent upstream providers from filling optional fields and breaking delegation.  
+[Provider compatibility ↗](https://github.com/aaif-goose/goose/pull/12272)
+
+**[OpenHands](https://github.com/OpenHands/OpenHands) · Usable on smaller screens**  
+Made Skills, Hooks, and Tools dialogs fit narrow viewports while preserving desktop sizing and keeping close controls reachable.  
+[Responsive agent dialogs ↗](https://github.com/OpenHands/OpenHands/pull/17586)
+
+**[LibreChat](https://github.com/LibreChat-AI/LibreChat) · Authentication reliability**  
+Fixed non-string ban-cache keys that caused OAuth login failures when Redis was disabled.  
+[OAuth / cache-key fix ↗](https://github.com/LibreChat-AI/LibreChat/pull/16039)
+
+**[Cherry Studio](https://github.com/CherryHQ/cherry-studio) · Two merged fixes**  
+Restored empty knowledge-base listings and prevented invalid UUID item IDs from breaking OpenAI Responses continuations, while preserving valid provider-issued IDs.  
+[Knowledge-base validation ↗](https://github.com/CherryHQ/cherry-studio/pull/19874) · [Responses compatibility ↗](https://github.com/CherryHQ/cherry-studio/pull/20414)
+
+### Incorporated upstream · authorship preserved
+
+**[Hermes Agent · Nous Research](https://github.com/NousResearch/hermes-agent)**  
+Fixed interrupted-update recovery so pending gateway fleet restarts complete on the next update run—even when Git already reports up to date. My original fix was cherry-picked into a maintainer's merged PR with authorship preserved; the original PR was not directly merged.  
+[Original contribution ↗](https://github.com/NousResearch/hermes-agent/pull/95328) · [Merged upstream ↗](https://github.com/NousResearch/hermes-agent/pull/95980)
+
+<details>
+<summary><strong>Still building · selected open pull requests</strong></summary>
+
+These are open contributions, not merged work. Status checked September 30, 2026.
+
+- **[vLLM](https://github.com/vllm-project/vllm/pull/58570)** — INT8 MoE per-channel weight-scale indexing.
+- **[SGLang](https://github.com/sgl-project/sglang/pull/40542)** — checkpoint dtype handling for KDA short-convolution weights.
+- **[LiteLLM](https://github.com/BerriAI/litellm/pull/43818)** — preserving citation annotations through the streaming Responses bridge.
+- **[MLX](https://github.com/ml-explore/mlx/pull/4584)** — Metal template-name handling for negative integer parameters.
+- **[LMDeploy](https://github.com/InternLM/lmdeploy/pull/4985)** — including embedding content in prefix-cache identity.
+- **[OpenHands](https://github.com/OpenHands/OpenHands/pull/17421)** — carrying enabled Canvas skills into Claude Code ACP sessions.
+- **[Jan](https://github.com/janhq/jan/pull/8944)** — custom OpenAI-compatible providers without API keys.
+
+[All open public PRs →](https://github.com/pulls?q=is%3Apr+author%3Agokay-ai+is%3Aopen+is%3Apublic)
+
+</details>
+
+[Explore merged PRs →](https://github.com/pulls?q=is%3Apr+author%3Agokay-ai+is%3Amerged+is%3Apublic) · [All public contributions →](https://github.com/pulls?q=is%3Apr+author%3Agokay-ai+is%3Apublic)
 
 ## Building
 
