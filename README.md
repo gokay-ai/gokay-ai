@@ -16,10 +16,10 @@ I'm Gökay, an AI engineer working across **LLM infrastructure, autonomous agent
 **Beyond the demo. Into the infrastructure.**  
 Merged fixes across inference engines, model tooling, and the agents built on top.
 
-![Merged PRs](https://img.shields.io/badge/12_merged_PRs-8_upstream_projects-00b8c4?style=flat-square&labelColor=101820)
+![Merged PRs](https://img.shields.io/badge/25_merged_PRs-13_upstream_projects-00b8c4?style=flat-square&labelColor=101820)
 ![Hermes contribution](https://img.shields.io/badge/Hermes_Agent-upstreamed_with_credit-83c167?style=flat-square&labelColor=101820)
 
-<sub>Selected external AI projects · verified September 30, 2026 · excludes my own repositories and company projects. Hermes is counted separately.</sub>
+<sub>External open-source projects · verified November 8, 2026 · excludes my own repositories and company projects. Hermes is counted separately.</sub>
 
 ### Inference & model infrastructure
 
@@ -33,17 +33,41 @@ Normalized cache revision paths on Windows to match Hub/API names and CLI filter
 
 **[Unsloth](https://github.com/unslothai/unsloth) · Training tooling**  
 Repaired Studio's Linux installation fallback when distro `uv` policy blocks automatic Python downloads—without overriding system policy.  
-[Linux installation recovery ↗](https://github.com/unslothai/unsloth/pull/9358)
+[Linux installation recovery ↗](https://github.com/unslothai/unsloth/pull/9358)  
+Also restored tiled VAE encoding on Apple MPS by building tile blend weights on the CPU.  
+[Apple MPS tiled encoding ↗](https://github.com/unslothai/unsloth/pull/12937)
+
+**[compressed-tensors · vLLM](https://github.com/vllm-project/compressed-tensors) · Reproducible checkpoint tooling**  
+Added optional Hub revision pinning to checkpoint downloads and conversion, so runs can target a specific branch, tag, or commit instead of a moving default branch.  
+[Revision-pinned checkpoints ↗](https://github.com/vllm-project/compressed-tensors/pull/1007)
+
+**[MLX · Apple](https://github.com/ml-explore/mlx) · Metal kernel reliability**  
+Fixed generated Metal kernel names for negative integer template parameters, preventing invalid identifiers from breaking compilation.  
+[Metal template-name fix ↗](https://github.com/ml-explore/mlx/pull/4584)
+
+**[Dynamo · frontend-crates](https://github.com/ai-dynamo/frontend-crates) · Streaming tool-call parsing**  
+Fixed handling of complete tool-call start markers in trailing stream content, preventing Gemma tool calls from being lost or leaking into ordinary response text across chunk boundaries.  
+[Streaming parser recovery ↗](https://github.com/ai-dynamo/frontend-crates/pull/408)
+
+**[InvokeAI](https://github.com/invoke-ai/InvokeAI) · Two merged fixes**  
+Corrected noise handling when FLUX denoising continues from latents without adding noise, and restored fixed-seed LCM reproducibility across FLUX.1, FLUX.2, and Z-Image.  
+[Latent continuation ↗](https://github.com/invoke-ai/InvokeAI/pull/9836) · [Seed reproducibility ↗](https://github.com/invoke-ai/InvokeAI/pull/9837)
 
 ### Agent runtimes & developer tools
 
-**[OpenClaw](https://github.com/openclaw/openclaw) · Four merged fixes**  
+**[OpenClaw](https://github.com/openclaw/openclaw) · Seven merged fixes**  
 Enabled compaction and retry for llama.cpp context overflows; repaired plugin-catalog refresh routing; distinguished local worker timeouts from provider errors; stopped internal runtime-publication failures from triggering unrelated provider failover and misleading quota warnings.  
 [Context recovery ↗](https://github.com/openclaw/openclaw/pull/133888) · [Catalog routing ↗](https://github.com/openclaw/openclaw/pull/144740) · [Timeout attribution ↗](https://github.com/openclaw/openclaw/pull/155675) · [Failover classification ↗](https://github.com/openclaw/openclaw/pull/157218)
+
+Preserved incoming Feishu files on captioned or multi-file posts, kept workboard dispatch working with oversized stored comments, and prevented huge Codex thread previews from breaking catalog listings.  
+[Incoming files ↗](https://github.com/openclaw/openclaw/pull/151896) · [Oversized comments ↗](https://github.com/openclaw/openclaw/pull/154958) · [Large thread previews ↗](https://github.com/openclaw/openclaw/pull/157106)
 
 **[Goose](https://github.com/aaif-goose/goose) · Tool-calling compatibility**  
 Set explicit non-strict tool schemas for Chat Completions to prevent upstream providers from filling optional fields and breaking delegation.  
 [Provider compatibility ↗](https://github.com/aaif-goose/goose/pull/12272)
+
+Added missing GLM models to the OpenCode Go and Zen provider catalogs.  
+[GLM model availability ↗](https://github.com/aaif-goose/goose/pull/12057)
 
 **[OpenHands](https://github.com/OpenHands/OpenHands) · Usable on smaller screens**  
 Made Skills, Hooks, and Tools dialogs fit narrow viewports while preserving desktop sizing and keeping close controls reachable.  
@@ -53,9 +77,16 @@ Made Skills, Hooks, and Tools dialogs fit narrow viewports while preserving desk
 Fixed non-string ban-cache keys that caused OAuth login failures when Redis was disabled.  
 [OAuth / cache-key fix ↗](https://github.com/LibreChat-AI/LibreChat/pull/16039)
 
-**[Cherry Studio](https://github.com/CherryHQ/cherry-studio) · Two merged fixes**  
+**[Cherry Studio](https://github.com/CherryHQ/cherry-studio) · Four merged fixes**  
 Restored empty knowledge-base listings and prevented invalid UUID item IDs from breaking OpenAI Responses continuations, while preserving valid provider-issued IDs.  
 [Knowledge-base validation ↗](https://github.com/CherryHQ/cherry-studio/pull/19874) · [Responses compatibility ↗](https://github.com/CherryHQ/cherry-studio/pull/20414)
+
+Made pinned-agent navigation open the selected agent and kept conversation-to-knowledge saves working when referenced files are missing.  
+[Pinned-agent navigation ↗](https://github.com/CherryHQ/cherry-studio/pull/20327) · [Resilient knowledge saves ↗](https://github.com/CherryHQ/cherry-studio/pull/20355)
+
+**[Logfire · Pydantic](https://github.com/pydantic/logfire) · SQL observability**  
+Corrected SQL summaries to count only top-level CTE definitions and replaced the problematic scan with a linear approach, avoiding quadratic slowdowns on long literals.  
+[Accurate, efficient SQL summaries ↗](https://github.com/pydantic/logfire/pull/2652)
 
 ### Incorporated upstream · authorship preserved
 
@@ -66,19 +97,27 @@ Fixed interrupted-update recovery so pending gateway fleet restarts complete on 
 <details>
 <summary><strong>Still building · selected open pull requests</strong></summary>
 
-These are open contributions, not merged work. Status checked September 30, 2026.
+These are open contributions, not merged work. Status checked November 8, 2026.
 
-- **[vLLM](https://github.com/vllm-project/vllm/pull/58570)** — INT8 MoE per-channel weight-scale indexing.
 - **[SGLang](https://github.com/sgl-project/sglang/pull/40542)** — checkpoint dtype handling for KDA short-convolution weights.
 - **[LiteLLM](https://github.com/BerriAI/litellm/pull/43818)** — preserving citation annotations through the streaming Responses bridge.
-- **[MLX](https://github.com/ml-explore/mlx/pull/4584)** — Metal template-name handling for negative integer parameters.
 - **[LMDeploy](https://github.com/InternLM/lmdeploy/pull/4985)** — including embedding content in prefix-cache identity.
-- **[OpenHands](https://github.com/OpenHands/OpenHands/pull/17421)** — carrying enabled Canvas skills into Claude Code ACP sessions.
 - **[Jan](https://github.com/janhq/jan/pull/8944)** — custom OpenAI-compatible providers without API keys.
 
 [All open public PRs →](https://github.com/pulls?q=is%3Apr+author%3Agokay-ai+is%3Aopen+is%3Apublic)
 
 </details>
+
+<details>
+<summary><strong>Previous submissions · closed without merge</strong></summary>
+
+These submissions are preserved for transparency and are not included in merged totals.
+
+- **[vLLM](https://github.com/vllm-project/vllm/pull/58570)** — INT8 MoE per-channel weight-scale indexing. **Closed, unmerged.**
+- **[OpenHands](https://github.com/OpenHands/OpenHands/pull/17421)** — carrying enabled Canvas skills into Claude Code ACP sessions. **Closed, unmerged.**
+
+</details>
+
 
 [Explore merged PRs →](https://github.com/pulls?q=is%3Apr+author%3Agokay-ai+is%3Amerged+is%3Apublic) · [All public contributions →](https://github.com/pulls?q=is%3Apr+author%3Agokay-ai+is%3Apublic)
 
