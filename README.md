@@ -23,29 +23,29 @@ Merged fixes across inference engines, model tooling, and the agents built on to
 
 <table>
 <tr>
-<td align="center" width="33%"><h3><a href="https://github.com/vllm-project/vllm">vLLM</a></h3><strong>1 merged</strong><br><sub>Distributed inference</sub></td>
-<td align="center" width="33%"><h3><a href="https://github.com/ml-explore/mlx">MLX</a></h3><strong>1 merged</strong><br><sub>Apple · Metal kernels</sub></td>
-<td align="center" width="33%"><h3><a href="https://github.com/huggingface/huggingface_hub">Hugging Face Hub</a></h3><strong>1 merged</strong><br><sub>Model infrastructure</sub></td>
+<td align="center" width="33%"><br><a href="https://github.com/vllm-project/vllm"><img src="https://github.com/vllm-project.png?size=96" width="42" height="42" alt="vllm-project" /></a><h3><a href="https://github.com/vllm-project/vllm">vLLM</a></h3><sub>Distributed inference</sub><br><br></td>
+<td align="center" width="33%"><br><a href="https://github.com/ml-explore/mlx"><img src="https://github.com/ml-explore.png?size=96" width="42" height="42" alt="ml-explore" /></a><h3><a href="https://github.com/ml-explore/mlx">MLX</a></h3><sub>Apple · Metal kernels</sub><br><br></td>
+<td align="center" width="33%"><br><a href="https://github.com/huggingface/huggingface_hub"><img src="https://github.com/huggingface.png?size=96" width="42" height="42" alt="huggingface" /></a><h3><a href="https://github.com/huggingface/huggingface_hub">Hugging Face Hub</a></h3><sub>Model infrastructure</sub><br><br></td>
 </tr>
 <tr>
-<td align="center" width="33%"><h3><a href="https://github.com/unslothai/unsloth">Unsloth</a></h3><strong>2 merged</strong><br><sub>Training &amp; Apple MPS</sub></td>
-<td align="center" width="33%"><h3><a href="https://github.com/ai-dynamo/frontend-crates">Dynamo</a></h3><strong>1 merged</strong><br><sub>Streaming tool calls</sub></td>
-<td align="center" width="33%"><h3><a href="https://github.com/vllm-project/compressed-tensors">compressed-tensors</a></h3><strong>1 merged</strong><br><sub>vLLM · Checkpoint tooling</sub></td>
+<td align="center" width="33%"><br><a href="https://github.com/unslothai/unsloth"><img src="https://github.com/unslothai.png?size=96" width="42" height="42" alt="unslothai" /></a><h3><a href="https://github.com/unslothai/unsloth">Unsloth</a></h3><sub>Training &amp; Apple MPS</sub><br><br><img src="https://img.shields.io/badge/2_merged-00B8C4?style=flat-square&amp;labelColor=101820" alt="2 merged PRs" /><br><br></td>
+<td align="center" width="33%"><br><a href="https://github.com/ai-dynamo/frontend-crates"><img src="https://github.com/ai-dynamo.png?size=96" width="42" height="42" alt="ai-dynamo" /></a><h3><a href="https://github.com/ai-dynamo/frontend-crates">Dynamo</a></h3><sub>Streaming tool calls</sub><br><br></td>
+<td align="center" width="33%"><br><a href="https://github.com/vllm-project/compressed-tensors"><img src="https://github.com/vllm-project.png?size=96" width="42" height="42" alt="vllm-project" /></a><h3><a href="https://github.com/vllm-project/compressed-tensors">compressed-tensors</a></h3><sub>vLLM · Checkpoint tooling</sub><br><br></td>
 </tr>
 <tr>
-<td align="center" width="33%"><h3><a href="https://github.com/openclaw/openclaw">OpenClaw</a></h3><strong>7 merged</strong><br><sub>Agent runtime reliability</sub></td>
-<td align="center" width="33%"><h3><a href="https://github.com/aaif-goose/goose">Goose</a></h3><strong>2 merged</strong><br><sub>Providers &amp; tool calling</sub></td>
-<td align="center" width="33%"><h3><a href="https://github.com/OpenHands/OpenHands">OpenHands</a></h3><strong>1 merged</strong><br><sub>Agent developer tools</sub></td>
+<td align="center" width="33%"><br><a href="https://github.com/openclaw/openclaw"><img src="https://github.com/openclaw.png?size=96" width="42" height="42" alt="openclaw" /></a><h3><a href="https://github.com/openclaw/openclaw">OpenClaw</a></h3><sub>Agent runtime reliability</sub><br><br><img src="https://img.shields.io/badge/7_merged-00B8C4?style=flat-square&amp;labelColor=101820" alt="7 merged PRs" /><br><br></td>
+<td align="center" width="33%"><br><a href="https://github.com/aaif-goose/goose"><img src="https://github.com/aaif-goose.png?size=96" width="42" height="42" alt="aaif-goose" /></a><h3><a href="https://github.com/aaif-goose/goose">Goose</a></h3><sub>Providers &amp; tool calling</sub><br><br><img src="https://img.shields.io/badge/2_merged-00B8C4?style=flat-square&amp;labelColor=101820" alt="2 merged PRs" /><br><br></td>
+<td align="center" width="33%"><br><a href="https://github.com/OpenHands/OpenHands"><img src="https://github.com/OpenHands.png?size=96" width="42" height="42" alt="OpenHands" /></a><h3><a href="https://github.com/OpenHands/OpenHands">OpenHands</a></h3><sub>Agent developer tools</sub><br><br></td>
 </tr>
 <tr>
-<td align="center" width="33%"><h3><a href="https://github.com/CherryHQ/cherry-studio">Cherry Studio</a></h3><strong>4 merged</strong><br><sub>AI workspace reliability</sub></td>
-<td align="center" width="33%"><h3><a href="https://github.com/invoke-ai/InvokeAI">InvokeAI</a></h3><strong>2 merged</strong><br><sub>Generative imaging</sub></td>
-<td align="center" width="33%"><h3><a href="https://github.com/LibreChat-AI/LibreChat">LibreChat</a></h3><strong>1 merged</strong><br><sub>Authentication reliability</sub></td>
+<td align="center" width="33%"><br><a href="https://github.com/CherryHQ/cherry-studio"><img src="https://github.com/CherryHQ.png?size=96" width="42" height="42" alt="CherryHQ" /></a><h3><a href="https://github.com/CherryHQ/cherry-studio">Cherry Studio</a></h3><sub>AI workspace reliability</sub><br><br><img src="https://img.shields.io/badge/4_merged-00B8C4?style=flat-square&amp;labelColor=101820" alt="4 merged PRs" /><br><br></td>
+<td align="center" width="33%"><br><a href="https://github.com/invoke-ai/InvokeAI"><img src="https://github.com/invoke-ai.png?size=96" width="42" height="42" alt="invoke-ai" /></a><h3><a href="https://github.com/invoke-ai/InvokeAI">InvokeAI</a></h3><sub>Generative imaging</sub><br><br><img src="https://img.shields.io/badge/2_merged-00B8C4?style=flat-square&amp;labelColor=101820" alt="2 merged PRs" /><br><br></td>
+<td align="center" width="33%"><br><a href="https://github.com/LibreChat-AI/LibreChat"><img src="https://github.com/LibreChat-AI.png?size=96" width="42" height="42" alt="LibreChat-AI" /></a><h3><a href="https://github.com/LibreChat-AI/LibreChat">LibreChat</a></h3><sub>Authentication reliability</sub><br><br></td>
 </tr>
 <tr>
-<td align="center" width="33%"><h3><a href="https://github.com/pydantic/logfire">Logfire</a></h3><strong>1 merged</strong><br><sub>Pydantic · Observability</sub></td>
-<td align="center" width="33%"><h3><a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a></h3><strong>Upstreamed with credit</strong><br><sub>Nous Research · Not a direct merge</sub></td>
-<td align="center" width="33%"><strong>Beyond the demo.</strong><br><sub>Into the infrastructure.</sub></td>
+<td align="center" width="33%"><br><a href="https://github.com/pydantic/logfire"><img src="https://github.com/pydantic.png?size=96" width="42" height="42" alt="pydantic" /></a><h3><a href="https://github.com/pydantic/logfire">Logfire</a></h3><sub>Pydantic · Observability</sub><br><br></td>
+<td align="center" width="33%"><br><a href="https://github.com/NousResearch/hermes-agent"><img src="https://github.com/NousResearch.png?size=96" width="42" height="42" alt="NousResearch" /></a><h3><a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a></h3><sub>Nous Research · Not a direct merge</sub><br><br><sub><strong>UPSTREAMED · AUTHORSHIP PRESERVED</strong></sub><br><br></td>
+<td align="center" width="33%"><br><strong>BUILD THE TOOL.</strong><br><strong>TRACE THE FAILURE.</strong><br><strong>SHIP THE FIX.</strong><br><br><sub>Open-source contributions. Real fixes.</sub><br><br></td>
 </tr>
 </table>
 
