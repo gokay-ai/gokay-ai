@@ -16,10 +16,41 @@ I'm Gökay, an AI engineer working across **LLM infrastructure, autonomous agent
 **Beyond the demo. Into the infrastructure.**  
 Merged fixes across inference engines, model tooling, and the agents built on top.
 
-![Merged PRs](https://img.shields.io/badge/25_merged_PRs-13_upstream_projects-00b8c4?style=flat-square&labelColor=101820)
-![Hermes contribution](https://img.shields.io/badge/Hermes_Agent-upstreamed_with_credit-83c167?style=flat-square&labelColor=101820)
+![Merged PRs](https://img.shields.io/badge/25_merged_PRs-13_upstream_projects-00b8c4?style=for-the-badge&labelColor=101820)
+![Hermes contribution](https://img.shields.io/badge/Hermes_Agent-upstreamed_with_credit-83c167?style=for-the-badge&labelColor=101820)
 
 <sub>External open-source projects · verified November 8, 2026 · excludes my own repositories and company projects. Hermes is counted separately.</sub>
+
+<table>
+<tr>
+<td align="center" width="33%"><h3><a href="https://github.com/vllm-project/vllm">vLLM</a></h3><strong>1 merged</strong><br><sub>Distributed inference</sub></td>
+<td align="center" width="33%"><h3><a href="https://github.com/ml-explore/mlx">MLX</a></h3><strong>1 merged</strong><br><sub>Apple · Metal kernels</sub></td>
+<td align="center" width="33%"><h3><a href="https://github.com/huggingface/huggingface_hub">Hugging Face Hub</a></h3><strong>1 merged</strong><br><sub>Model infrastructure</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><h3><a href="https://github.com/unslothai/unsloth">Unsloth</a></h3><strong>2 merged</strong><br><sub>Training &amp; Apple MPS</sub></td>
+<td align="center" width="33%"><h3><a href="https://github.com/ai-dynamo/frontend-crates">Dynamo</a></h3><strong>1 merged</strong><br><sub>Streaming tool calls</sub></td>
+<td align="center" width="33%"><h3><a href="https://github.com/vllm-project/compressed-tensors">compressed-tensors</a></h3><strong>1 merged</strong><br><sub>vLLM · Checkpoint tooling</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><h3><a href="https://github.com/openclaw/openclaw">OpenClaw</a></h3><strong>7 merged</strong><br><sub>Agent runtime reliability</sub></td>
+<td align="center" width="33%"><h3><a href="https://github.com/aaif-goose/goose">Goose</a></h3><strong>2 merged</strong><br><sub>Providers &amp; tool calling</sub></td>
+<td align="center" width="33%"><h3><a href="https://github.com/OpenHands/OpenHands">OpenHands</a></h3><strong>1 merged</strong><br><sub>Agent developer tools</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><h3><a href="https://github.com/CherryHQ/cherry-studio">Cherry Studio</a></h3><strong>4 merged</strong><br><sub>AI workspace reliability</sub></td>
+<td align="center" width="33%"><h3><a href="https://github.com/invoke-ai/InvokeAI">InvokeAI</a></h3><strong>2 merged</strong><br><sub>Generative imaging</sub></td>
+<td align="center" width="33%"><h3><a href="https://github.com/LibreChat-AI/LibreChat">LibreChat</a></h3><strong>1 merged</strong><br><sub>Authentication reliability</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><h3><a href="https://github.com/pydantic/logfire">Logfire</a></h3><strong>1 merged</strong><br><sub>Pydantic · Observability</sub></td>
+<td align="center" width="33%"><h3><a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a></h3><strong>Upstreamed with credit</strong><br><sub>Nous Research · Not a direct merge</sub></td>
+<td align="center" width="33%"><strong>Beyond the demo.</strong><br><sub>Into the infrastructure.</sub></td>
+</tr>
+</table>
+
+<details>
+<summary><strong>Contribution details · all merged PRs & upstream credit</strong></summary>
 
 ### Inference & model infrastructure
 
@@ -93,6 +124,8 @@ Corrected SQL summaries to count only top-level CTE definitions and replaced the
 **[Hermes Agent · Nous Research](https://github.com/NousResearch/hermes-agent)**  
 Fixed interrupted-update recovery so pending gateway fleet restarts complete on the next update run—even when Git already reports up to date. My original fix was cherry-picked into a maintainer's merged PR with authorship preserved; the original PR was not directly merged.  
 [Original contribution ↗](https://github.com/NousResearch/hermes-agent/pull/95328) · [Merged upstream ↗](https://github.com/NousResearch/hermes-agent/pull/95980)
+
+</details>
 
 <details>
 <summary><strong>Still building · selected open pull requests</strong></summary>
